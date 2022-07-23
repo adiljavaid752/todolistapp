@@ -1,4 +1,5 @@
 import React from 'react'
+import NoteAddIcon from '@mui/icons-material/NoteAdd';
 
 
 
@@ -19,7 +20,7 @@ export default function Input({handleclickone,handlchange,value}){
         <div className='main'>
                 
         <input  onChange={handlchange}type="text" placeholder='Add Item' value={value}/>
-        <button style={{display:value?"block":"none"}}onClick={handleclick} className='Button' type='submit'>Add</button>
+        <button style={{display:value?"block":"none"}}onClick={handleclick} className='Button' type='submit'><NoteAddIcon /></button>
     </div>
     )
 
